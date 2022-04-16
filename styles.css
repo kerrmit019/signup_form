@@ -17,7 +17,9 @@ body {
 
 main {
   display: flex;
+  flex-direction: column;
   flex: 1;
+  background-color: #f9fafb;
 }
 
 aside {
@@ -57,10 +59,14 @@ aside .footer-aside {
   align-self: center;
   margin-bottom: 1em;
 }
-a {
+aside a {
   color: white;
 }
 
+main a {
+  text-decoration: none;
+  color: #596d48;
+}
 .odin-logo-container img {
   height: 6em;
   padding: 0.4em;
@@ -71,4 +77,31 @@ a {
   align-self: center;
   font-family: norse-bold;
   font-size: 6em;
+}
+.form-description {
+  flex: 1;
+  background-color: aqua;
+  /* justify-content: flex-end; */
+}
+.form-container {
+  flex: 1;
+  background-color: blue;
+  display: flex;
+}
+
+.submit-form-container {
+  padding: 25px 30px;
+  font-size: 0.6em;
+  flex: 1;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
