@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Sign Up Form</title>
   </head>
   <body>
@@ -34,13 +40,57 @@
           this in your life to help you realise your deepest dreams.
           <br /><span>Sign up <em>now</em> to get started</span>
         </p>
-        <span>You <em>know</em> you want to.</span>
+        <p>You <em>know</em> you want to.</p>
       </div>
-      <div class="form-container">FORM WILL GO HERE</div>
+      <div class="form-container">
+        <form action="" id="signUpForm">
+          <h3>Let's do this!</h3>
+
+          <div class="form-row">
+            <p>
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" name="firstName" id="firstName" />
+            </p>
+
+            <p>
+              <label for="lastName">LAST NAME</label>
+              <input type="text" name="lastName" id="lasstName" />
+            </p>
+          </div>
+
+          <div class="form-row">
+            <p>
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+            </p>
+
+            <p>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone" id="phone" />
+            </p>
+          </div>
+
+          <div class="form-row">
+            <p>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+            </p>
+            <p>
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </p>
+          </div>
+        </form>
+      </div>
       <div class="submit-form-container">
-        <button>Create Account</button>
+        <button type="submit" form="signUpForm">Create Account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
+      <footer>Made by SK for The Odin Project &copy 2022</footer>
     </main>
   </body>
 </html>
