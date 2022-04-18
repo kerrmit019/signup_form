@@ -123,6 +123,11 @@ button {
   margin-bottom: 30px;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: #515841;
+}
+
 .form-row {
   display: flex;
   flex-direction: column;
@@ -157,6 +162,15 @@ input {
   padding: 5px;
 }
 
+input:focus .error,
+.error {
+  border: 1px solid rgb(185, 52, 65);
+}
+
+.error-message {
+  font-size: x-small;
+  color: rgb(185, 52, 65);
+}
 input:focus {
   border: 1px solid rgb(0, 72, 255);
   box-shadow: 3px 3px 10px rgba(111, 111, 111, 0.5);
