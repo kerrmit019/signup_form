@@ -139,7 +139,6 @@ form {
 
 .form-row label {
   font-size: small;
-  font-weight: bold;
   font-kerning: normal;
   margin-top: 15px;
 }
@@ -156,6 +155,12 @@ input {
   height: 2em;
   width: 100%;
   padding: 5px;
+}
+
+input:focus {
+  border: 1px solid rgb(0, 72, 255);
+  box-shadow: 3px 3px 10px rgba(111, 111, 111, 0.5);
+  outline: none;
 }
 
 footer {
